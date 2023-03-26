@@ -559,10 +559,14 @@ img {
   align-items: center;
   gap: 16px;
   font-weight: 500;
-
+  cursor: pointer;
   margin-left: 24px;
+  transition: background-color var(--transition);
 }
-
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #404bbf;
+}
 /* Modal window */
 /* visible  */
 
@@ -745,6 +749,7 @@ img {
   width: 169px;
   height: 56px;
   background: var(--accent-color);
+  display: block;
 
   border-radius: 4px;
   outline: transparent;
@@ -756,7 +761,7 @@ img {
   letter-spacing: 0.04em;
 
   color: var(--hero-title-color);
-  margin-left: 96px;
+  margin: 0 auto;
   border: none;
   cursor: pointer;
 }
